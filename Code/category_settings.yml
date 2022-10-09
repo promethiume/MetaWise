@@ -1,0 +1,6 @@
+data:
+  primary_file: /home/pumengchen/DataSource/MutSigDemo/WES_sig30_MutSigs_Exposure_Matrix_Primary_9740samples.txt
+  metastatic_file: /home/pumengchen/DataSource/MutSigDemo/WES_sig30_MutSigs_Exposure_Matrix_Metastasis_1559samples.txt
+#  primary_file: /home/pumengchen/DataSource/MutSigDemo/WES_MutSigs_Exposure_Matrix_Primary_TCGA-9742-samples.txt
+#  metastatic_file: /home/pumengchen/DataSource/MutSigDemo/WES_MutSigs_Exposure_Matrix_Metastasis_1870-samples.txt
+  primary_num: 2000

@@ -1,0 +1,19 @@
+data:
+  label_file: /home/pumengchen/DataSource/MutSigDemo/WES/WES_clinical_sample.txt
+#  value_file: /home/pumengchen/DataSource/MutSigDemo/WES/WES_sig30_Exposure-Mat.txt
+#  value_file: /home/pumengchen/DataSource/MutSigDemo/WES/WES_fit-COSMIC_sig107_MutSigs_Exposure-Mat.txt
+#  value_file: /home/pumengchen/DataSource/MutSigDemo/WES/WES_sig30_Exposure-Mat_cds.txt
+  value_file: /home/pumengchen/DataSource/MutSigDemo/WES/WES_fit-COSMIC_sig107_MutSigs_Exposure-Mat_cds.txt
+
+  flags: column
+#  category:
+#    category_column: ONCOTREE_CODE
+#    category_name: SKCM
+  type_description:
+    type_description_column: SAMPLE_TYPE
+    type_description_Primary: Primary
+    type_description_Metastatic: Metastasis
+  Tumor_Sample_Barcode: SAMPLE_ID
+  primary_num: 1540
+  metastatic_num: 1540
+  K: 6
