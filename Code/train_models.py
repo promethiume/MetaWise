@@ -142,7 +142,7 @@ def fitness(learning_rate, weight_decay, dropout, num_dense_layers, num_dense_no
 
 
 if __name__ == '__main__':
-    print("请输入训练集占比(小数)：")
+    #print("input the train dataset percentage(e.g., 0.8):")
     fol = float(0.8)
     if fol <= 0 or fol >= 1:
         sys.exit()
@@ -151,8 +151,7 @@ if __name__ == '__main__':
     print(test_size)
     # feature_type = sys.argv[2]
 
-    print("输入文件为按类别分布，请输入0；输入文件按data和value分布，请输入1：")
-    tp = int(1)
+    tp = int(1)   # data format. 0 represent "positive/negative data in seperate file"; 1 represent "label in seperate file"
     if tp == 0:
         from category_dataloader import loader
     elif tp == 1:
@@ -205,10 +204,10 @@ if __name__ == '__main__':
         # src.write_svg("./model/model_summary-data8-107_%s_%s.svg" % (fold, i))
         # with open("./results/DNN_results-data8_107_%s.txt" % fold, "a") as f:
         #     f.write('model_name: DNN-data8-107_%s_%s.keras' % (fold, i) + '\n')
-        #     f.write("训练集：" + '\n')
+        #     f.write("training: " + '\n')
         #     f.write(str(train_report))
-        #     f.write("验证集：" + '\n')
+        #     f.write("validation: " + '\n')
         #     f.write(str(val_report))
-        #     f.write("测试集：" + '\n')
+        #     f.write("test: " + '\n')
         #     f.write(str(test_report))
         #     f.write('\n')

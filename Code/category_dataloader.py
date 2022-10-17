@@ -13,7 +13,7 @@ def loader():
         print("Expected a file settings.yml but didn't find it.")
         return
 
-    # 读取实验数据
+    # get input
     print('--> Acquiring data...')
     primary_file = settings['data']['primary_file']
     primary_value = pd.read_csv(primary_file, sep="\t")
@@ -28,11 +28,12 @@ def loader():
     metastatic_values = metastatic_value.T
     print('Finished acquiring data.')
 
-    # 将阴性和阳性数据按行进行连接
+    # concate all data
     datas = np.concatenate((primary_values, metastatic_values), axis=0)
 
     primary_num = int(settings['data']['primary_num'])
-    # 阴阳性数据类别标签，0为阴性，1为阳性
+
+    # generate labels, 0 for primary cell, 1 for meta cell
     labels = []
     for i in range(len(datas)):
         if i < primary_num:
