@@ -4,6 +4,11 @@ Deep Learning model of metastatic tumors classifier
 
 https://www.biorxiv.org/content/10.1101/2022.09.29.510207v1
 
+Deep learning model accurately classifies metastatic tumors from primary tumors based on mutational signatures
+
+https://www.nature.com/articles/s41598-023-35842-w
+
+
 ## Code
 
 ├── category_dataloader.py              `load category type data`
